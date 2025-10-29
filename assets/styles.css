@@ -7,6 +7,9 @@
     --text-white: rgba(255, 255, 255, 1);
     --background-dark: rgba(13, 14, 16, 1);
     --border-radius: 50px;
+    --primary-color: #2563eb;
+    --secondary-color: #1e40af;
+    --container-width: 1200px;
 }
 
 /* Font faces */
@@ -16,6 +19,226 @@
          url('fonts/pinyon-script.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-dark);
+    color: var(--text-white);
+    font-family: var(--font-family-neue-montreal);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Hero Section */
+.hero-4-1 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--background-dark);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.rectangle-2256-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.rectangle-2254-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(13, 14, 16, 0.7);
+    z-index: 2;
+}
+
+.frame-42-4 {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.frame-38-5 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.line-2-6,
+.line-3-7,
+.line-4-8 {
+    width: 24px;
+    height: 2px;
+    background-color: var(--text-white);
+}
+
+.text-9 {
+    font-family: var(--font-family-sharpe-personal);
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.frame-41-10 {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.text-11 {
+    font-size: 12px;
+    line-height: 32px;
+}
+
+.frame-39-12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--text-white);
+    border-radius: 50%;
+}
+
+.text-13 {
+    font-family: var(--font-family-tomato-grotesk);
+    font-size: 16px;
+}
+
+.text-14 {
+    position: relative;
+    z-index: 3;
+    font-size: 20px;
+    text-transform: uppercase;
+    max-width: 600px;
+    margin: 2rem 0;
+}
+
+.frame-43-15 {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 2rem 0;
+    overflow: hidden;
+}
+
+.text-16,
+.text-18 {
+    font-family: var(--font-family-tomato-grotesk);
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+.vector-17,
+.vector-19 {
+    width: 16px;
+    height: 16px;
+}
+
+.text-35 {
+    position: relative;
+    z-index: 3;
+    font-family: var(--font-family-pinyon-script);
+    font-size: clamp(48px, 8vw, 96px);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    max-width: 900px;
+    margin: 2rem 0;
+}
+
+.button-36 {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: 1px solid var(--text-white);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.button-36:hover {
+    transform: scale(1.1);
+}
+
+.arrow-38-37 {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-4-1 {
+        padding: 1rem;
+    }
+
+    .frame-42-4 {
+        padding: 1rem 0;
+    }
+
+    .text-14 {
+        font-size: 16px;
+    }
+
+    .frame-43-15 {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 1rem;
+    }
+
+    .button-36 {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Animation for scrolling text */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.frame-43-15 {
+    animation: scroll 20s linear infinite;
 }
 
 * {
