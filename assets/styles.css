@@ -1,15 +1,21 @@
 /* Base Styles */
 :root {
-    --primary-color: #2563eb;
-    --secondary-color: #1e40af;
-    --text-color: #1f2937;
-    --light-text: #6b7280;
-    --background: #ffffff;
-    --light-background: #f3f4f6;
-    --border-color: #e5e7eb;
-    --success-color: #10b981;
-    --container-width: 1200px;
-    --border-radius: 8px;
+    --font-family-pinyon-script: 'Pinyon Script', sans-serif;
+    --font-family-sharpe-personal: 'Sharpe Personal', sans-serif;
+    --font-family-neue-montreal: 'Neue Montreal', sans-serif;
+    --font-family-tomato-grotesk: 'Tomato Grotesk', sans-serif;
+    --text-white: rgba(255, 255, 255, 1);
+    --background-dark: rgba(13, 14, 16, 1);
+    --border-radius: 50px;
+}
+
+/* Font faces */
+@font-face {
+    font-family: 'Pinyon Script';
+    src: url('fonts/pinyon-script.woff2') format('woff2'),
+         url('fonts/pinyon-script.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 * {
@@ -19,9 +25,12 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-dark);
+    color: var(--text-white);
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 .container {
