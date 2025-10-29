@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+
+.hero {
+  background: #F1EDE9;
+  position: relative;
+  min-height: 960px;
+  padding: 0 72px 80px;
+  overflow: hidden;
+}
+
+.hero-image-left {
+  width: 637px;
+  height: 717px;
+  border-radius: 0 50px 50px 0;
+  position: absolute;
+  left: 0;
+  top: 3px;
+  object-fit: cover;
+}
+
+.hero-content {
+  max-width: 1296px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title {
+  color: #0D0E10;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 98.6%;
+  letter-spacing: -1.92px;
+  margin: 188px 0 0 250px;
+}
+
+.title-decorative {
+  font-family: 'Pinyon Script', -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 96px;
+}
+
+.title-main {
+  font-family: 'Neue Montreal', -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 96px;
+}
+
+.hero-subtitle {
+  color: #0D0E10;
+  font-family: 'Sharpe PERSONAL', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 96px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 98.6%;
+  letter-spacing: -3.84px;
+  margin: 0 0 0 660px;
+}
+
+.cta-button {
+  display: inline-flex;
+  padding: 8px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 50px;
+  border: 1px solid #0D0E10;
+  background: transparent;
+  cursor: pointer;
+  margin: 51px 0 0 1104px;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #0D0E10;
+}
+
+.cta-button:hover .button-label {
+  color: #F1EDE9;
+}
+
+.cta-button:hover .button-icon path {
+  stroke: #F1EDE9;
+}
+
+.button-label {
+  color: #0D0E10;
+  font-family: 'Neue Montreal', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  transition: color 0.3s ease;
+}
+
+.button-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.button-icon path {
+  transition: stroke 0.3s ease;
+}
+
+.hero-description {
+  width: 434px;
+  color: #0D0E10;
+  font-family: 'Neue Montreal', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 147px 0 0 727px;
+}
+
+.hero-image-bottom {
+  width: 238px;
+  height: 334px;
+  border-radius: 50px;
+  position: absolute;
+  left: 786px;
+  bottom: 80px;
+  object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    min-height: auto;
+    padding: 40px 20px;
+  }
+
+  .hero-image-left {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    border-radius: 0 30px 30px 0;
+    left: 0;
+    top: 0;
+    margin-bottom: 40px;
+  }
+
+  .hero-title {
+    font-size: 48px;
+    margin: 40px 0 0 0;
+    text-align: center;
+  }
+
+  .title-decorative {
+    font-size: 48px;
+  }
+
+  .title-main {
+    font-size: 48px;
+  }
+
+  .hero-subtitle {
+    font-size: 48px;
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+
+  .cta-button {
+    margin: 30px auto 0;
+    display: flex;
+  }
+
+  .hero-description {
+    width: 100%;
+    max-width: 434px;
+    margin: 40px auto 0;
+    text-align: center;
+  }
+
+  .hero-image-bottom {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 40px;
+    bottom: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .title-decorative {
+    font-size: 36px;
+  }
+
+  .title-main {
+    font-size: 36px;
+  }
+
+  .hero-subtitle {
+    font-size: 36px;
+  }
+
+  .hero-image-bottom {
+    width: 200px;
+    height: 280px;
+  }
+}
