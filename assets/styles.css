@@ -1,0 +1,136 @@
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Variables */
+:root {
+  /* Colors */
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-primary: #0A2F66;
+  --color-text: #574E57;
+  --color-dark: #1D161D;
+  --color-button: #2A232A;
+  --color-button-border: #443C44;
+  --color-border: #786C78;
+
+  /* Typography */
+  --font-mono: 'DM Mono', monospace;
+  --font-inter: 'Inter', sans-serif;
+}
+
+/* Base */
+body {
+  font-family: var(--font-inter);
+  color: var(--color-text);
+  background: #F8F6F8;
+  line-height: 1.5;
+}
+
+/* Header */
+.header {
+  position: relative;
+  width: 100%;
+  height: 118px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.announcement-bar {
+  background-color: var(--color-black);
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.announcement-text {
+  color: var(--color-white);
+  font-size: 13.9px;
+  letter-spacing: -0.14px;
+  line-height: 18px;
+}
+
+.header-content {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+}
+
+.logo {
+  display: block;
+  width: 113px;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+  height: 48px;
+  align-items: center;
+}
+
+.nav-link {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.28px;
+  color: var(--color-text);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+}
+
+.nav-link.dropdown::after {
+  content: '';
+  width: 14px;
+  height: 14px;
+  background-image: url(https://www.figma.com/api/mcp/asset/909a8c38-bf94-4fba-a747-5115f86ee4a7);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.header-button {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.28px;
+  padding: 14px 18px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-secondary {
+  color: var(--color-dark);
+}
+
+.button-primary {
+  color: #FAF9FA;
+  background-color: var(--color-button);
+  border: 1px solid var(--color-button-border);
+  box-shadow: inset 0px 0px 12px 0px rgba(0,0,0,0.5);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
