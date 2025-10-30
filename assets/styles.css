@@ -30,6 +30,82 @@ body {
   line-height: 1.5;
 }
 
+/* Hero Section */
+.hero {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  text-align: center;
+  padding: 120px 20px;
+  margin: 40px 0;
+  border-radius: 24px;
+}
+
+.hero-content {
+  max-width: 778px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 63px;
+  line-height: 64px;
+  letter-spacing: -2.56px;
+  margin-bottom: 32px;
+}
+
+.hero-subtitle {
+  font-size: 61.1px;
+  line-height: 64px;
+  letter-spacing: -2.56px;
+  margin-bottom: 48px;
+}
+
+.hero-form {
+  max-width: 480px;
+  margin: 0 auto;
+  position: relative;
+  height: 52px;
+}
+
+.hero-input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  padding: 0 160px 0 16px;
+  color: var(--color-white);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  letter-spacing: 0.28px;
+}
+
+.hero-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+}
+
+.hero-button {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  height: 44px;
+  background: var(--color-white);
+  border: 1px solid #D6D1D6;
+  border-radius: 4px;
+  padding: 0 16px;
+  color: var(--color-text);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.28px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.hero-button:hover {
+  background: #F6F6F6;
+}
+
 /* Header */
 .header {
   position: relative;
