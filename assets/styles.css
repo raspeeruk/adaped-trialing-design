@@ -32,12 +32,45 @@ body {
 
 /* Hero Section */
 .hero {
+  position: relative;
   background-color: var(--color-black);
   color: var(--color-white);
   text-align: center;
-  padding: 120px 20px;
-  margin: 40px 0;
+  padding: 224px 20px 120px;
   border-radius: 24px;
+  margin: 40px 0;
+  overflow: hidden;
+}
+
+.new-tag {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14.5px;
+  padding: 7px 10px;
+  margin-bottom: 48px;
+}
+
+.tag-label {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--color-white);
+}
+
+.tag-divider {
+  width: 1px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 0 11px;
+}
+
+.tag-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 13px;
 }
 
 .hero-content {
@@ -49,7 +82,7 @@ body {
   font-size: 63px;
   line-height: 64px;
   letter-spacing: -2.56px;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 
 .hero-subtitle {
@@ -59,37 +92,29 @@ body {
   margin-bottom: 48px;
 }
 
-.hero-form {
-  max-width: 480px;
-  margin: 0 auto;
-  position: relative;
-  height: 52px;
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 48px;
 }
 
-.hero-input {
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 4px;
-  padding: 0 160px 0 16px;
-  color: var(--color-white);
-  font-family: var(--font-mono);
-  font-size: 14px;
-  letter-spacing: 0.28px;
-}
-
-.hero-input::placeholder {
-  color: rgba(255, 255, 255, 0.5);
-  text-transform: uppercase;
-}
-
-.hero-button {
+.folding-effect {
   position: absolute;
-  right: 4px;
-  top: 4px;
-  height: 44px;
-  background: var(--color-white);
+  top: 7px;
+  right: 0;
+  width: 80px;
+  height: 192px;
+}
+
+.hero-subtitle {
+  font-size: 61.1px;
+  line-height: 64px;
+  letter-spacing: -2.56px;
+  margin-bottom: 48px;
+}
+
+
   border: 1px solid #D6D1D6;
   border-radius: 4px;
   padding: 0 16px;
